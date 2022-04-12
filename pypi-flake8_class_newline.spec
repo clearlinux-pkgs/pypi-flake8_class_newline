@@ -4,7 +4,7 @@
 #
 Name     : pypi-flake8_class_newline
 Version  : 1.6.0
-Release  : 30
+Release  : 31
 URL      : https://files.pythonhosted.org/packages/17/f3/d93a95971801e0bd28539e7727e90553217ea76d48098ea02d10832f609f/flake8-class-newline-1.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/17/f3/d93a95971801e0bd28539e7727e90553217ea76d48098ea02d10832f609f/flake8-class-newline-1.6.0.tar.gz
 Summary  : Flake8 lint for newline after class definitions.
@@ -14,9 +14,6 @@ Requires: pypi-flake8_class_newline-license = %{version}-%{release}
 Requires: pypi-flake8_class_newline-python = %{version}-%{release}
 Requires: pypi-flake8_class_newline-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: flake8-class-newline
-Provides: flake8-class-newline-python
-Provides: flake8-class-newline-python3
 BuildRequires : pypi(flake8)
 
 %description
@@ -59,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641435874
+export SOURCE_DATE_EPOCH=1649746904
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
