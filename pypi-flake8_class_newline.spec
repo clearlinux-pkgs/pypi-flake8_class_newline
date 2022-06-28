@@ -4,7 +4,7 @@
 #
 Name     : pypi-flake8_class_newline
 Version  : 1.6.0
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/17/f3/d93a95971801e0bd28539e7727e90553217ea76d48098ea02d10832f609f/flake8-class-newline-1.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/17/f3/d93a95971801e0bd28539e7727e90553217ea76d48098ea02d10832f609f/flake8-class-newline-1.6.0.tar.gz
 Summary  : Flake8 lint for newline after class definitions.
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1653331097
+export SOURCE_DATE_EPOCH=1656376781
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -99,7 +99,7 @@ export FCFLAGS="$FCFLAGS -m64 -march=x86-64-v3 "
 export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3 "
 python3 -tt setup.py build install --root=%{buildroot}-v3
 popd
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
